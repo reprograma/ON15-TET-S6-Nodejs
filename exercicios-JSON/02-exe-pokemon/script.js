@@ -36,3 +36,29 @@ const data = [
 
 // COMEÇA O EXERCÍCIO
 
+/* for(let item of data) {
+    console.log(item.name)
+    console.log(item.description)
+    // console.log(item.types)
+
+    let tipos = item.types
+
+    for(element of tipos) {
+        console.log(element)
+    }
+    
+}
+ */
+
+for (i=0; i < data.length; i++) {
+    console.log(data[i].name)
+    console.log(data[i].description)
+    console.log(data[i].types)
+
+    // let tipos = data[i].types
+
+    for (j=0; j<data[i].types.length; j++){
+        console.log(data[i].types[j])
+    }
+}
+
