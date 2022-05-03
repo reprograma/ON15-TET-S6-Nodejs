@@ -151,3 +151,10 @@ const obj = [{
 }]
 
 
+for (key in obj) { 
+    let coresObj = (obj[key])
+    for (const [key, value] of Object.entries(coresObj)) {
+        console.log(`${key} RGB: ${value}`);
+    }
+}
+
