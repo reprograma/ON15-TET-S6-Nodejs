@@ -5732,3 +5732,26 @@ const estados = [
         ]
       }
     ]
+
+
+
+function buscarCidades(entrada){
+  for(let i=0; i < estados.length; i++){
+    let buscarEstado = estados[i]
+    let estadoEn = buscarEstado.sigla
+    let cidadeEn = buscarEstado.cidades
+
+    if (estadoEn == entrada){
+    for (key in cidadeEn){
+      let coresObj = (cidadeEn[key])
+      console.log(coresObj)
+    };       
+          
+    };       
+      
+  };       
+     
+  };
+ 
+buscarCidades("TO")
+  
