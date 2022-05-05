@@ -51,14 +51,14 @@ const data = [
  */
 
 for (i=0; i < data.length; i++) {
-    console.log(data[i].name)
-    console.log(data[i].description)
-    console.log(data[i].types)
+    // console.log(data[i].name)
+    // console.log(data[i].description)
+    // console.log(data[i].types)
 
-    // let tipos = data[i].types
+    let tipos = data[i].types
 
-    for (j=0; j<data[i].types.length; j++){
-        console.log(data[i].types[j])
+    for (j=0; j<tipos.length; j++){
+        console.log(tipos[j])
     }
 }
 

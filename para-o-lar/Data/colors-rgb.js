@@ -149,3 +149,26 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for(i=0; i<obj.length; i++) {
+   let cores = Object.entries(obj[i]) //transforma a key e value de um obje em 2 arrays, cada
+    for(j=0; j<cores.length; j++) {
+       let chave = cores[j][0]
+       let valor = cores[j][1].join(",") //retira os valores da array e transforma em string separada por vírgula
+       console.log(`${(chave)} RGB: ${valor}`)
+    }      
+    
+}
+
+//pegar só o valor
+// for(let j of Object.values(cores)) {
+//     let valores = j.join(",")
+//     console.log(valores)   
+
+
+
+    /* for(let k in cores) {
+    console.log(`${k} RGB: ${cores[k]}`)
+   } */ 
+   //tentar utilizar for 
+
