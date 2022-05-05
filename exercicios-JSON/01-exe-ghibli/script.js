@@ -24,7 +24,9 @@ const jsonDeFilmes = [
     ]
 
 //Apresente no console cada um dos atributos desse JS
+// correção 13h59
 // COMEÇA O EXERCÍCIO
+
 
 for(i=0; i<jsonDeFilmes.length; i++) {
   console.log(jsonDeFilmes[i].title)
@@ -32,8 +34,7 @@ for(i=0; i<jsonDeFilmes.length; i++) {
 
 }
 
-// for(let item of jsonDeFilmes){
-// }
+
 
 
   

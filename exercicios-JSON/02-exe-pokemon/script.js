@@ -36,19 +36,7 @@ const data = [
 
 // COMEÇA O EXERCÍCIO
 
-/* for(let item of data) {
-    console.log(item.name)
-    console.log(item.description)
-    // console.log(item.types)
 
-    let tipos = item.types
-
-    for(element of tipos) {
-        console.log(element)
-    }
-    
-}
- */
 
 for (i=0; i < data.length; i++) {
     // console.log(data[i].name)
