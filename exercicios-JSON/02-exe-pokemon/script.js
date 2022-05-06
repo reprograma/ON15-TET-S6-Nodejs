@@ -35,4 +35,11 @@ const data = [
 // DESAFIO: apresente os types fora da lista
 
 // COMEÇA O EXERCÍCIO
-
+for (const item of data) {
+    console.log(item.name, "\n")
+    console.log(item.description, "\n")
+        for (let elemento of item.types){
+            console.log(elemento, "\n")
+        
+        }
+}
