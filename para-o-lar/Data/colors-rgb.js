@@ -1,4 +1,5 @@
-const obj = [{
+const obj = [
+    {
     "aliceblue": [240, 248, 255, 1],
     "antiquewhite": [250, 235, 215, 1],
     "aqua": [0, 255, 255, 1],
@@ -148,4 +149,45 @@ const obj = [{
     "yellow": [255, 255, 0, 1],
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
-}]
+    }
+]
+
+
+for(let i=0; i<obj.length; i++){
+    let cores = Object.keys(obj[i]);
+    
+    for(let j=0; j<cores.length; j++){
+        let escala = obj[i][cores[j]];
+        escala = Object.values(escala);
+
+        console.log(`${cores[j]} RGB: ${escala}`)
+        
+    }
+}
+
+// Object.keys() : retorna um array cujos elementos são strings correspondentes às propriedades (chaves) ​​encontradas diretamente em object.
+    
+// Object.values() : retorna uma matriz cujos elementos são os valores de propriedade ​​encontrados no objeto.
+
+   
+
+//---------------------------- No Plantão de Dúvidas ----------------------------------------------------
+
+// let novoObjeto = obj[0] // é um index do array obj.
+// let valor = Object.values(novoObjeto)
+// let chave = Object.keys(novoObjeto)
+
+// for(let i=0; i< chave.length; i++){
+//     console.log(`${chave[i]} RGB: ${valor[i]}`)
+// }
+
+// ------------------------------- Com for....in: ----------------------------------------------------
+
+// for(let i=0; i<obj.length; i++) {
+//     let colors = obj[i]
+
+//     for(chave in colors){
+//         console.log(`${chave} RGB: ${colors[chave]}`)
+//     }
+
+// }

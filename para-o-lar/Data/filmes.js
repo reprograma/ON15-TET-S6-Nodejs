@@ -75,3 +75,16 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+
+for(let i=0; i<obj.length; i++){
+    let filmes= obj[i]
+    console.log(filmes.Title);
+    console.log(filmes.Year)
+
+    let genero= filmes.Genre.split(",");  //uso o splint pra transformar string em array.
+
+    for(let j=0; j<genero.length; j++){
+        console.log(genero[j])
+    }
+}
