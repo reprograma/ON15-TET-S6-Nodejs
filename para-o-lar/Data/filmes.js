@@ -80,8 +80,8 @@ const obj = [
 //(desafio: apresente cada Genero em linhas separadas)
 
 for (const filme of obj){
-    console.log("Título: "+filme.Title)
-    console.log("Ano de lançamento: "+filme.Year)
+    console.log("Título: " +filme.Title)
+    console.log("Ano de lançamento: " +filme.Year)
 
     let genero = []
     genero = filme.Genre.split(",")
