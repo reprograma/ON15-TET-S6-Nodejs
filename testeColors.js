@@ -152,14 +152,108 @@ const obj = [{
 
 // 7) Do arquivo colors-rgb retorne no terminal o RGB como no exemplo: "aliceblue RGB: 240, 248, 255, 1"
 
-let unicoObjeto = obj[0]
-let valor = Object.values(unicoObjeto)
-let chave = Object.keys(unicoObjeto)
+// (......................................................................................................)
 
-for(let i = 0; i < chave.length; i++){
+// # 1 Trata-se de uma Array com um objeto, sendo que as chaves dos objetos estão em formato de string, e os valores estão em formato de array, o indice de cada objeto da array eu denominei como i, (pode ser demoninado como j, k ou elemento para facilitar o entendimento na hora da construção e leitura do códico, (índice no caso em especifico é a posição do objeto que se encontra na array, lembrando que a contagem dos índices da array começa no zero)
+
+// Iniciei meu código com um FOR para percorrer a array  "for( let i = 0; i < obj.length; i++){}'
+
+// O índice "i" foi ultilizado para indicar o objeto dentro da array, no caso só tem um objeto. A variável "let i" começa no zero, ou seja, percorre o primeiro objeto da array, mas pode ser definido um outro indicador de começo, a exemplor: 1, 2..
+
+// Você pode colocar "i < obj.length;" pois inclui todos os objetos da Array, pois dessa forma não será necessário saber quantos objetos tem na array. Mas se você souber quantos objetos tem na array, pode colocar como por exemplo "i < 1.;" ou "i <= 0;"ou "i < 0 + 1;"
+
+// O "i++" é igual a "i + 1"
+
+
+
+// 1.1 Testando o que retorna no terminal (-----------------------------------------------)
+
+// // console.log(obj)    -retornar a array com todo o objeto.
+
+// // let retornar = obj[i]  - não retorna nada, pois eu não defini o "i" ( dentro do For retorna, pois eu havia definido)
+// // console.log(retornar)
+
+// let retornar = obj[0]  -retorna o primeito elemento da array que eu definir dentro do colchete, ou seja, retorna todo o primeiro objeto
+// console.log(retornar)
+
+// let retornar = obj[0].yellow  -retorna somente o valor da chave yellow(eu quiz só o o yellow") do objeto definido dentro do colchete.
+// console.log(retornar)
+
+// console.log(obj[0].yellow)    - sem criar varia´vel -retorna somente o valor da chave yellow(eu quiz só o o yellow") do objeto definido dentro do colchete.
+
+// for( let i = 0; i < obj.length; i++){  - Nesse exemplo, como o "i" está definido no for, eu consigo retorno. 
+//     let retornar = obj[i]              - Essa variável criada retorna ao terminal todo o objeto da array, porém não aparece os colchetes da array, porque o for está percorrendo a array( dentro da array). OBS: como eu queria percorre chave e valor do objeto, eu ultilizei esse método e depois tentei transformar o objeto em array( achei que seria mais fácil pecorrer em forma de array), porém não deu certo transformar o objeto em array.  
+//     console.log(retornar)              - Então, para percorrer elemento da array eu usei o For, e para percorrer o objeto ultizei um novo for entro do for da array.
+// }
+
+// for( let i = 0; i < obj.length; i++){  - Percorre toda a array e retorna todo o valor do yellow
+//     let retornar = obj[i]   
+//     let imprimir = retornar.yellow
+//     console.log(imprimir)
+// }
+
+// for( let i = 0; i < obj.length; i++){   - Também percorre toda a array e retorna todos os valores do yellow, igual no exemplo acima, porém de forma diferente.
+//     let retornar = obj[i]
+//     console.log(retornar.yellow)
+// }
+
+// for(let i = 0; i < obj.length; i++){
+//     let retorno = obj[i]
+//     for(item in retorno){      - o item no caso esta representando as chaves do objeto
+//         console.log(`${item}`) - retorna no terminal somente as chaves do objeto
+//     }
+// }
+
+// for(let i = 0; i < obj.length; i++){
+//     let retorno = obj[i]
+//     for(item in retorno){                 - o "item" no caso esta representando as chaves do objeto, e "retorno" é o objeto que iremos percorrer
+//         console.log(`${retorno[item]}`)   - retorna no terminal somente os valores do objeto                                        
+//     }
+// }
+
+
+//1.2 resoluções(---------------------------------------------)
+
+// for(let i = 0; i < obj.length; i++){
+//     let retorno = obj[i]
+//     for(item in retorno){
+//         console.log(`${item} RGB: ${retorno[item]}`)
+//     }
+// }
+
+                                //    OU
+
+
+
+// for(key in obj){
+//     let retornar= (obj[key])
+//     for( let[key, value] of Object.entries(retornar)){
+//         console.log(`${key} RGB: ${value}`);
+//     }   
+// }
+
+
+                                //  OU  
+
+
+// let unicoObjeto = obj[0]
+// let valor = Object.values(unicoObjeto)
+// let chave = Object.keys(unicoObjeto)
+
+// for(let i = 0; i < chave.length; i++){
    
-    console.log(`${chave[i]} RGB: ${valor[i]}`)
+//     console.log(`${chave[i]} RGB: ${valor[i]}`)
    
-}
+// }
+
+
+
+
+
+
+
+
+
+
 
 
