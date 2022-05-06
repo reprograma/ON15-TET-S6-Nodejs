@@ -5732,3 +5732,20 @@ const estados = [
         ]
       }
     ]
+
+
+
+for (let sig of estados){
+
+  console.log(sig['sigla'])
+console.log(sig['cidades'])
+}
+
+
+
+/* De novo, não estou conseguindo botar minha ideia em pratica
+Estou com dificuldade para percorrer a array e trazer o que quero
+Fiz pesquisas mas não consegui executar.
+Queria, mais uma vez, criar uma função onde eu passasse a sigla como argumento,
+e ela me retornasse as cidades.
+Não sei se o for nesse caso fica dentro ou fora da função.*/

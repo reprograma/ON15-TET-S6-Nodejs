@@ -75,3 +75,11 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+for (let item of obj){
+
+ 
+    console.log(item['Title'])
+    console.log(item['Year'])
+    console.log(item['Genre'])
+}

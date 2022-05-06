@@ -149,3 +149,25 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for (let cor of obj){
+
+console.log(cor["yellow"])
+
+}
+
+
+/*
+Não estou conseguindo reproduzir a minha ideia.
+Eu gostaria de criar uma função, com argumento, onde o argumento seria o nome da cor,
+no caso, a "chave" do objeto.
+Para quando a função for chamada, e passar o argumento, ela trouxesse as informações.
+O que raciocinei: */
+
+function retornaCor ([nomedacor]){
+
+return console.log(nomedacor)
+
+}
+
+retornaCor(["tomato"])
