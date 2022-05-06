@@ -23,9 +23,10 @@ const jsonDeFilmes = [
      }
     ]
 
-//Apresente no console cada um dos atributos desse JS
-// correção 13h59
-// COMEÇA O EXERCÍCIO
+//Apresente no console cada um dos atributos desse
+
+for( let i = 0; i < jsonDeFilmes.length; i++){
+  let filmes = onDeFilmes[i]
 
 for(let i=0; i < jsonDeFilmes.length; i++){
     let filme = jsonDeFilmes[i]

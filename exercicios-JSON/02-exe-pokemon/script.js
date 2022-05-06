@@ -34,7 +34,20 @@ const data = [
 
 // DESAFIO: apresente os types fora da lista
 
-// COMEÇA O EXERCÍCIO
+
+for( let i = 0; i < data.length; i++){
+    let pokemon = data[i]
+    console.log(pokemon.name)
+    console.log(pokemon.description)
+    console.log(pokemon.art_url)
+
+    let tipos = pokemon.types
+
+    for( let i = 0; i < tipos.length; i++){
+        
+        console.log(tipos[i])
+    }
+  }
 
 // 14h13
 

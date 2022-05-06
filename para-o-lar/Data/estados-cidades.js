@@ -5732,3 +5732,13 @@ const estados = [
         ]
       }
     ]
+
+    // 8) Do arquivo estados-cidade dado uma sigla retorne no terminal o lista de cidades
+
+function buscarSigla(entrada){
+  let estado = estados.find((uf) => uf.sigla == entrada)
+  return estado.cidades
+}
+console.log(buscarSigla("MG"))
+
+

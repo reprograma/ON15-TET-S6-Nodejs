@@ -75,3 +75,24 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+
+// 6) Do arquivo filmes.js retorne no terminal o Titulo, Ano e Genero. (desafio: apresente cada Genero em linhas separadas)
+
+for( let i = 0; i < obj.length; i++){
+    let retornar = obj[i]
+
+    let tiulo = retornar.Title
+    let ano = retornar.Year
+    let genero = retornar.Genre
+
+    console.log(tiulo)
+    console.log(ano)
+    
+    let retornarGenero = genero.split(",")
+    for(let j = 0; j < retornarGenero.length; j++){
+        console.log(retornarGenero[j])
+
+    }
+
+}
