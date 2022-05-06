@@ -23,12 +23,15 @@ const jsonDeFilmes = [
      }
     ]
 
-//Apresente no console cada um dos atributos desse JS
+//Apresente no console cada um dos atributos desse
 
 for( let i = 0; i < jsonDeFilmes.length; i++){
-  let filmes = jsonDeFilmes[i]
-  console.log(jsonDeFilmes.title)
-  console.log(jsonDeFilmes.description)
+  let filmes = onDeFilmes[i]
+
+for(let i=0; i < jsonDeFilmes.length; i++){
+    let filme = jsonDeFilmes[i]
+    console.log(filme.title)
+    console.log(filme.description)
 }
 
 
