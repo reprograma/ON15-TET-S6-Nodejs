@@ -149,3 +149,25 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// tentativa que funcionou fazendo sozinha:
+
+// for (key in obj) { 
+//     let coresObj = (obj[key]) 
+
+//     for (const [key, value] of Object.entries(coresObj)) {
+//         console.log(`${key} RGB ${value}`)        
+//     }
+// }
+// ------------------------------------
+
+// fazendo o exercício no plantão de dúvidas:
+
+let novoObjeto = obj[0] 
+let valor = Object.values(novoObjeto)
+let chave = Object.keys(novoObjeto)
+
+for(let i=0; i < chave.length; i++){
+    console.log(`${chave[i]} RGB: ${valor[i]}`)
+
+}

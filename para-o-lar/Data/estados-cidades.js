@@ -5732,3 +5732,33 @@ const estados = [
         ]
       }
     ]
+
+
+// function listaCidades(entrada) {  
+//   for(let i=0; i < estados.length; i++) {    
+//     let buscarEstados = estados[i]
+//     let entradaEstados = buscarEstados.sigla
+//     let entradaCidades = buscarEstados.cidades    
+
+//     if(entradaEstados == entrada) {
+//       for (lista in entradaCidades) {
+//         let buscarCidades = (entradaCidades[lista])
+//         console.log(buscarCidades)
+//       }
+  
+//     }
+
+//   }
+  
+// }   
+
+// listaCidades("CE")
+// ----------------------------------------------
+
+// Fazendo no plantão de dúvidas:
+
+function buscarEstado(entrada) {        
+  return estados.find((uf) => uf.sigla == entrada)
+}
+
+console.log(buscarEstado("CE"))
