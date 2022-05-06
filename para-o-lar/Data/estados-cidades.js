@@ -5733,32 +5733,29 @@ const estados = [
       }
     ]
 
-  function listar (cidade) {
-    const encontrarEstado = estados.filter(({sigla}) => sigla == cidade )
+  
+//// ------- 1º opção ---------------/////////  
+  // function listar (cidade) {
+  //   const encontrarEstado = estados.filter(({sigla}) => sigla == cidade )
 
-        for (let i of encontrarEstado) {
+  //       for (let i of encontrarEstado) {
 
-          let municipio = i.cidades
+  //         let municipio = i.cidades
+  //         for (let j of municipio) {
+  //           console.log (j)
+  //         }
+  //       }
+  // }
+  // listar("TO")
+  
+// //// ------- 2º opção ---------------/////////
+for(let i =0; i <estados.length; i++){
 
-          
+  let acessaEstados = estados[i]
+  
+  console.log("\n*********")
+  console.log(`Estado: ${acessaEstados.nome} - (${acessaEstados.sigla})`)
+  console.log(`Ele possuí ${acessaEstados.cidades.length} cidades, estas são: ${acessaEstados.cidades.toString()}`)
+}
 
-        for (let j of municipio) {
-
-          console.log (j)
-
-
-
-        }
-
-         
-
-         
-
-        }
-    
-
-
-  }
-  listar("TO")
-
-    
+  

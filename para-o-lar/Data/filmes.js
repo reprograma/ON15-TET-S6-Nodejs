@@ -80,16 +80,31 @@ const obj = [
 // retorna o array. A divisão é feita procurando um padrão, onde o padrão é fornecido como o primeiro parâmetro na 
 // chamada do método.
 
+//// ------- 1º opção ---------------/////////
 
+// for(let i=0; i < obj.length; i++){
+
+//         let filme = obj[i]
+//         console.log(filme.Title)
+//         console.log(filme.Year)
+        
+//         let genero = filme.Genre.split(",")
+//         for(let j=0; j < genero.length; j++){
+//             console.log(genero[j]);        
+//         }       
+        
+//       }
+
+
+//// ------- 2º opção ---------------/////////
 for (let filme = 0; filme < obj.length; filme++) {
     let imprimir = obj[filme]
     console.log(imprimir.Title)
     console.log(imprimir.Year)
-   
+    console.log(imprimir.Genre) 
     
-    for (let film = 0; film < genero.length; film++) {
-        console.log(genero[film])
-    }
  
 }
+
+
 
