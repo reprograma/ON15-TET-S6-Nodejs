@@ -149,3 +149,13 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for (let rgb = 0; rgb < obj.length; rgb++) {
+    let cores =  obj[rgb]
+
+for (item in cores) {
+    console.log(`${item} RGB: ${cores[item]}`)
+
+}
+
+}

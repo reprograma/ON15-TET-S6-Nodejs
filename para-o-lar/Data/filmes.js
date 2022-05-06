@@ -75,3 +75,21 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+// O método split() divide uma String em uma lista ordenada de substrings, coloca essas substrings em um array e 
+// retorna o array. A divisão é feita procurando um padrão, onde o padrão é fornecido como o primeiro parâmetro na 
+// chamada do método.
+
+
+for (let filme = 0; filme < obj.length; filme++) {
+    let imprimir = obj[filme]
+    console.log(imprimir.Title)
+    console.log(imprimir.Year)
+   
+    
+    for (let film = 0; film < genero.length; film++) {
+        console.log(genero[film])
+    }
+ 
+}
+
