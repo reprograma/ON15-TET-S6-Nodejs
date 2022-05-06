@@ -149,3 +149,11 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for (let i=0; i < obj.length; i++){
+    let nomeCores = Object.keys(obj[i])
+    let rgb = Object.values(obj[i])
+
+    for (j=0; j < rgb.length; j++)
+    console.log(`Nome da cor: ${nomeCores[j]} | RGB: ${rgb[j]}`)
+}
