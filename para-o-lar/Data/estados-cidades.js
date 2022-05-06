@@ -5732,3 +5732,18 @@ const estados = [
         ]
       }
     ]
+
+    //dado uma sigla retorne no terminal o lista de cidades
+function encontrarCidades(uf){
+  uf = uf.toUpperCase()
+
+  for(let i = 0; i < estados.length; i++){
+   let estado = estados[i]
+      
+    if (uf == estado.sigla){
+    console.log(estado.cidades.toString())
+    }
+  }
+ }
+
+encontrarCidades("PE")
