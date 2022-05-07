@@ -5732,3 +5732,12 @@ const estados = [
         ]
       }
     ]
+
+  
+  
+  function voltaEstadoCidade(sigla) {     
+    let estado =  estados.find((estado) => estado.sigla == sigla)
+    return estado.cidades
+  }
+  
+  console.log(voltaEstadoCidade("PE")) 
