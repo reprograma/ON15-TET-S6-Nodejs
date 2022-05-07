@@ -149,3 +149,36 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+/// for (let rbg of obj){
+//return console.log("Yellow")
+
+//}
+
+/// aqui eu tentei retornar uma COR, colocando o nome através da função
+
+
+/* for (let rbg = 0; rbg < obj.length; rbg++){ //// aqui fiz junto com as meninas, na terça. e notei que minha lógica de retornar pelo nome estava incorreta.
+
+    let cores = obj[rbg]
+
+    for (i in cores){
+
+        console.log(`${i} RBG: ${cores[i]}`)
+
+    
+
+    }
+}  */
+
+//// essa foi a que deu certo com Jana e Xênia 
+
+
+let colors = obj[0]
+let valor = Object.values(colors)
+let chave = Object.keys(colors)
+
+for(let i=0; i < chave.length; i++){
+    console.log(`${chave[i]} RGB: ${valor[i]}`)
+
+}

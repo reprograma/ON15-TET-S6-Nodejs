@@ -5732,3 +5732,34 @@ const estados = [
         ]
       }
     ]
+
+
+
+ /*function listar(cidade){ 
+const buscar = estados.filter(({sigla}) => sigla == cidade) //// primeira tentativa com as meninas
+
+for (let i of buscar){
+
+  let local = i.cidades
+
+for (let j of local)
+
+console.log(j)
+
+}
+
+ }*/ 
+
+/*for(let i =0; i <estados.length; i++){ // TENTATIVAS NO PLANTÃO DE DÚVIDAS
+  let acessaEstados = estados[i]
+console.log("\n***********************")
+  console.log(`Estado: ${acessaEstados.nome} - (${acessaEstados.sigla})`)
+  console.log(`Ele possui ${acessaEstados.cidades.length} cidades, estas são: ${acessaEstados.cidades.toString()}`)
+
+ }
+*/
+function retornaEstado(entrada) {        // aqui fizemos sem o for no plantão, confesso que não me dediquei como qeuria nessa atividade, por problemas pessoais. 
+  return estados.find((uf) => uf.sigla == entrada)
+}
+
+console.log(retornaEstado("PE"))
