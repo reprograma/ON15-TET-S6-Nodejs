@@ -5732,3 +5732,25 @@ const estados = [
         ]
       }
     ]
+
+
+    // COMEÇAR EXERCICIO AQUI!!!
+    
+    function estadosFederais(pesquisa) {
+      pesquisa = pesquisa.toUpperCase()
+    
+      for (let i = 0; i < estados.length; i++) {
+        const siglas = estados[i].sigla
+        const municipios = estados[i].cidades
+    
+    
+        if (pesquisa == siglas) {
+          for (let j = 0; j < municipios.length; j++) {
+            let pesquisar = municipios[j]
+            console.log(pesquisar)
+          }
+        }
+      }
+    }
+    
+    estadosFederais("ac")

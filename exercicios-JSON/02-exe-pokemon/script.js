@@ -36,3 +36,23 @@ const data = [
 
 // COMEÇA O EXERCÍCIO
 
+
+
+for(let i=0; i < data.length; i++){ // i, j e k são variáveis utilizadas por boa prática
+    let pokemon = data[i]
+    console.log(pokemon.name)
+    console.log(pokemon.description)
+    console.log(pokemon.art_url)
+
+    let tipos = pokemon.types
+
+    for(let j=0; j < tipos.length; j++){
+        console.log(tipos[j])
+    }
+}
+
+//let tipos
+//for(let i=0; i< data.length); i++){
+//    let tipo 
+//}
+
