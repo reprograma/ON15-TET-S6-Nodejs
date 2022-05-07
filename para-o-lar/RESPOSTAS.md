@@ -14,13 +14,13 @@ Idempotente significa que o endpoint pode ser chamado várias vezes sem resultad
 **5) Qual a diferença entre os métodos PUT e PATCH?**
 São métodos HTTP PUT e PATCH são usados para indicar um requisição de alteração de dados. Geralmente, ao usar-se o PUT, fica legível que a alteração do dado será com referência a entidade completa.
 
-Exemplo: (/usuario/1234) :
+Exemplo: (/usuario/1234):
 
 Resultado: {'id': 1234, 'name': 'Joao', 'idade': 25, 'documento': '123.321.12-X'}
 
 O PATCH é usado para atualização parcial, quando você não quer mandar o payload completo.
 
-Exemplo: (/usuario/1234) :
+Exemplo: (/usuario/1234):
 
 Resultado: {'name': 'João'}
 
