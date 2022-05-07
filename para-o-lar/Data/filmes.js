@@ -75,3 +75,12 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+    for(let mov = 0; mov < obj.length; mov++){
+        let filme = obj[mov]
+            console.log(filme.Title)
+            console.log(filme.Year)
+            console.log(filme.Genre)
+    }
+
+// estou com dificuldade de formular a lógica dos arrays. fico sempre em dúvida se devo criar a variável dentro ou fora da função e dependendo do problema, fico perdida em como vou criar uma array para chamar todas as definições pedidas. 

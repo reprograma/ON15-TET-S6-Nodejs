@@ -149,3 +149,17 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+let Objeto = obj[0] 
+let valor = Object.values(Objeto)   //object.values() retorna um array com os valores das propriedades de um dado objeto.
+let strings = Object.keys(Objeto)     //Object.keys() retorna um array cujo os  elementos são strings correspondentes para a propriedade enumerável encontrada diretamento sobre o objeto.
+
+for(let Aline=0; Aline < strings.length; Aline++){
+    console.log(`${strings[Aline]} : ${valor[Aline]}`)}
+
+
+// professora, tive muito dificuldade em realizar essa operação. Passei praticamento uma tarde toda so nesse exercício, tentei fazer itilizando o for..of,
+// criando condições para cada cor, para depois chama-la no console, mas não funcionou, essa solução foi baseado em uma colega. Tentei usar so o object.values(), mas so voltava os numeros e não o nome da string.
+// Procurei por fora o signicado do values e Keys, não lembro de ter falado sobre eles na aula. Ainda não sei com certeza como utilizar ele, para esse exercício, funcionou.
+
+ 
