@@ -5732,3 +5732,17 @@ const estados = [
         ]
       }
     ]
+
+    // Do arquivo estados-cidade dado uma sigla retorne no terminal a lista de cidades
+    function retornarCidades (sigla) {
+      const buscarEstado = estados.find((element) => element.sigla == sigla );
+      let cidade = buscarEstado.cidades
+      for (let j = 0; j < cidade.length; j++) {
+          console.log(cidade[j])
+      }
+    }
+
+    retornarCidades("DF");
+
+
+    

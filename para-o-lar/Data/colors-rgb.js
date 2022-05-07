@@ -149,3 +149,29 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+//Do arquivo colors-rgb retorne no terminal o RGB como no exemplo: "aliceblue RGB: 240, 248, 255, 1"
+
+//1ª tentativa
+/*for (let i = 0; i < obj.length; i++){
+    let cores = obj[i]
+    console.log(cores.key,"\n")
+    console.log(cores.value,"\n")
+} 
+
+//console.log(obj[0].key)
+
+
+// 2ª tentativa
+obj[0].parse('{"color": RGB[]}', (key, value) => {
+    console.log(key); // mostra o nome da propriedade atual, o último é "".
+    console.log(value);    // retorna o valor da propriedade inalterada.
+}); */
+
+
+//3ª tentativa
+let cores = obj[0];
+
+for (let i = 0; i < Object.keys(cores).length; i++) {
+    console.log(Object.keys(cores)[i] + " RBG: " + Object.values(cores)[i]);
+}
