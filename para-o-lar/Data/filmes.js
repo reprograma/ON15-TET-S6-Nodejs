@@ -87,4 +87,4 @@ for(let i=0; i < obj.length; i++){
         console.log(genero[j]);        
     }       
     
-  }
+}

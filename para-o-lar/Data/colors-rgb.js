@@ -151,10 +151,23 @@ const obj = [{
 }]
 
 
-for (key in obj) { 
-    let coresObj = (obj[key])
-    for (const [key, value] of Object.entries(coresObj)) {
-        console.log(`${key} RGB: ${value}`);
-    }
-}
+for(let i=0; i < obj.length; i++){
+    let coresRGB = obj[i]
+    let chave = (Object.keys(coresRGB))
+    let valor = (Object.values(coresRGB))  
+    
+    for(let j=0; j < valor.length; j++){
+        console.log(`${chave[j]} RGB: ${valor[j]}`);
+            
+    };       
+        
+};       
+// Outra forma de fazer o exercício       
+// for (key in obj) { 
+//     let coresObj = (obj[key])
+//     for (const [key, value] of Object.entries(coresObj)) {
+//         console.log(`${key} RGB: ${value}`);
+//     }
+// }
 
+ 

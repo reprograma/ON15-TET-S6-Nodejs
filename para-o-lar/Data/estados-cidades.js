@@ -5740,18 +5740,36 @@ function buscarCidades(entrada){
     let buscarEstado = estados[i]
     let estadoEn = buscarEstado.sigla
     let cidadeEn = buscarEstado.cidades
-
-    if (estadoEn == entrada){
-    for (key in cidadeEn){
-      let coresObj = (cidadeEn[key])
-      console.log(coresObj)
-    };       
-          
-    };       
-      
-  };       
-     
-  };
- 
-buscarCidades("TO")
   
+    if (estadoEn == entrada){
+    for(let j=0; j < cidadeEn.length; j++){
+      let nomeCidades = cidadeEn[j]
+      console.log(nomeCidades)     
+       };      
+            
+      };       
+        
+    };       
+       
+    };
+   buscarCidades("TO")  
+ 
+// Outra forma de fazer   
+// function buscarCidades(entrada){
+//   for(let i=0; i < estados.length; i++){
+//     let buscarEstado = estados[i]
+//     let estadoEn = buscarEstado.sigla
+//     let cidadeEn = buscarEstado.cidades
+
+//     if (estadoEn == entrada){
+//     for (key in cidadeEn){
+//       let nomeCidade = (cidadeEn[key])
+//       console.log(cnomeCidade)
+//     };       
+          
+//     };       
+      
+//   };       
+     
+//   };
+//  buscarCidades("PE")

@@ -4,15 +4,15 @@ Turma Online Todas em Tech - Back-end | Semana 6: Introdução à API: HTTP e No
 Para a execução dessa aula vocês precisam realizar o FORK desse repositório e clonar SEU repositório forcado em sua máquina.
 
 ## 👩‍💻 TODO list
-- [ ] Modelo Server/Client
-- [ ] URL, URI, IP e DNS
-- [ ] Protocolo HTTP e HTTPS
-- [ ] Request e Response
-- [ ] Interface de Programação de aplicativos
-- [ ] Web APIs e Rest
-- [ ] Manipulação de JSONs
-- [ ] Consumindo web APIs
-- [ ] Para o Lar
+- [x] Modelo Server/Client
+- [x] URL, URI, IP e DNS
+- [x] Protocolo HTTP e HTTPS
+- [x] Request e Response
+- [x] Interface de Programação de aplicativos
+- [x] Web APIs e Rest
+- [x] Manipulação de JSONs
+- [x] Consumindo web APIs
+- [x] Para o Lar
 
 ## 👩‍💻 Para o Lar
 
