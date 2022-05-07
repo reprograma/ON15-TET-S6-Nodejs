@@ -5732,3 +5732,7 @@ const estados = [
         ]
       }
     ]
+function EstadosFederais(input) {
+  return estados.find((uf) => uf.sigla == input)
+}
+console.log(EstadosFederais("MG"))
