@@ -5732,3 +5732,16 @@ const estados = [
         ]
       }
     ]
+
+
+function Lista (localidade) {
+  for(let i=0; i < estados.length; i++){
+    return estados.find(elemento => elemento.sigla == localidade)          // find: retorna o valor do primeiro elemento do array que satisfizer a função de teste provida. Caso contrario, undefined é retornado.
+
+  }
+}
+console.log(Lista(["PE"]))
+
+
+
+// tentei fazer esse da mesma forma no exercício 'colors' usando o object.keys(), mas quando eu chamava so aparecia: (sigla, cidade, estado) tive que pesquisar muito no Google e me basear no exercício de colegas, tentei meu melhor pra fazer do meu jeito.
