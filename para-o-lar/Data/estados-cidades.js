@@ -5732,3 +5732,18 @@ const estados = [
         ]
       }
     ]
+function mapear (UF) {
+  for(let i=0; i < estados.length; i++){
+    let busca = estados[i]
+    //console.log(busca.sigla)
+    //console.log(busca.cidades)
+    if (UF===busca.sigla){
+    console.log(busca.cidades)
+    }
+  }
+
+}
+ 
+mapear ('ES')
+
+// se a sigla UF for igual a "sigla" então retorna as cidades

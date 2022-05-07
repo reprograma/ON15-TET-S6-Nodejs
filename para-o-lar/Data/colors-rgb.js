@@ -149,3 +149,28 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+for(let i=0; i < obj.length; i++){
+    let cor = obj[i]
+}
+function acharRGB (nomedacor) {
+
+    let cor = Object.keys(obj[0])
+    let rgb = obj[0][nomedacor]
+    let acheiCor = false
+
+    for (let i =0; i < cor.length; i++) {
+        // se eu o nome da cor que eu digitar existir, mostrar os detalhes da cor
+        if (cor.includes(nomedacor) ){
+           acheiCor = true
+        }
+    }
+    if (acheiCor) {
+        console.log(`${nomedacor} RGB: ${rgb}`)
+    }
+    else{
+        console.log('Essa cor não existe!') //senão, informar que a cor não existe
+    }
+}
+
+acharRGB('escreva o nome da cor') //digite um nome, verdadeiro ou não
