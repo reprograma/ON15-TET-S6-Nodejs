@@ -75,7 +75,8 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
-
+// esse foi mais parecido com os exemplos da aula, mas não consegui separar os gêneros
+// tentei com split e um tab, mas não rolou
 for (let i = 0; i < obj.length; i++) {
     let movie = obj[i]
     console.log(movie.Title)

@@ -5731,8 +5731,8 @@ const estados = [
           "Xambioá"
         ]
       }
-    ]
-function EstadosFederais(input) {
+    ] // não consegui fazer com for :(
+function EstadosFederais(input) { // eu "usei uma bazuca pra matar uma formiga"?
   return estados.find((uf) => uf.sigla == input)
 }
 console.log(EstadosFederais("MG"))
