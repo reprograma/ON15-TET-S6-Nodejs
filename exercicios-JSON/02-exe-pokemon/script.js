@@ -30,9 +30,21 @@ const data = [
     "types": ["fire"]
 }]
 
-//apresente no console todos os dados dos pokemons
+//apresente no console todos os dados dos pokemons (nome, descrição e tipos)
 
 // DESAFIO: apresente os types fora da lista
 
 // COMEÇA O EXERCÍCIO
+
+for(let i=0; i < data.length; i++) { // data.lenght "o limite, até onde vamos analisar"
+    let pokemon = data[i] // na lista de poiemon, o data é um ítem
+    console.log(pokemon.name)
+    console.log(pokemon.description)
+    console.log(".............")
+
+    let typesOfPokemon = pokemon.types // preciso criar fora porque não posso mexer com uma variável que está dentro do próprio for
+    for(let j=0; j< typesOfPokemon.length; j++){ // vou percorrer essa segunda lista (os tipos) a partir do tamanho dela
+        console.log(typesOfPokemon[j]) 
+    }
+} 
 
