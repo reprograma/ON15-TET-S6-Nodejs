@@ -75,3 +75,20 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+for (let i=0; i < obj.length; i++){
+    let filme = obj[i]
+    console.log(filme.Title)
+    console.log("")
+    console.log(filme.Year)
+    console.log("")
+    //console.log(filme.Genre)
+    console.log("----------------------------------------------")
+
+    let genero = filme.Genre
+    for(let j=0; j < genero.length; j++){ 
+        console.log(genero[j])//não sei o que acontece, mas os gêneros estão aparecendo no meu terminal uma letra de baixo da outra :(
+            
+     }
+
+}

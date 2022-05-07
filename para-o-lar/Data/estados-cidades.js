@@ -5732,3 +5732,9 @@ const estados = [
         ]
       }
     ]
+
+    function retornaEstado(entrada) {     
+      return estados.find((uf) => uf.sigla == entrada)
+    }
+    
+    console.log(retornaEstado("SP"))
