@@ -5731,4 +5731,26 @@ const estados = [
           "Xambioá"
         ]
       }
-    ]
+    ] 
+       
+     function buscar(entrada) { 
+
+       for(i=0; i<estados.length; i++) {
+
+         let sigla = estados[i].sigla
+         let cidade = estados[i].cidades
+
+         return estados.filter((cidade) => cidade.sigla == entrada)
+       }  
+      
+    }
+        console.log(buscar("SP"))
+      
+
+     
+    
+
+      
+          
+      
+
