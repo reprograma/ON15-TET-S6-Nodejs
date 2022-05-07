@@ -149,3 +149,11 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+
+let  novoObjeto  =  obj [ 0 ]
+let  valor  =  Objeto . valores ( novoObjeto )
+let chave  =  Objeto . chaves ( novoObjeto )
+
+for (let i= 0;  i  <  chave . comprimento ;  i ++ ) {
+    console.log ( ` ${ chave [ i ] } RGB: ${ valor [ i ] } ` ) }
