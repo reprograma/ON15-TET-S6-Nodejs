@@ -5732,3 +5732,13 @@ const estados = [
         ]
       }
     ]
+
+   function retornarEstado (sigla) {
+     Estado.cidade = "São Paulo";
+     
+     console.log (retornarEstado);
+
+     //tentei criar uma função para retornar a sigla referente a cidade de origem. 
+
+
+ }
