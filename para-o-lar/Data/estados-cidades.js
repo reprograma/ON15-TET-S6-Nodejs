@@ -5732,3 +5732,32 @@ const estados = [
         ]
       }
     ]
+
+      function buscarSigla (dadoEntrada){
+      for (let i=0; i < estados.length; i++){
+             
+        let siglaEstado = estados[i].sigla
+        let cidade = estados[i].cidades
+       
+        if (dadoEntrada == siglaEstado){
+          console.log(`Estado: ${siglaEstado}`)
+          console.log(`Cidades: ${cidade}`)
+        }
+      }
+    }
+
+    buscarSigla("PE")
+
+    // Outra forma de executar
+    // function buscarSigla (dadoEntrada){
+    //   const filtrandoSigla = estados.filter(({sigla}) => sigla == dadoEntrada)
+    //       for(let item of filtrandoSigla) {
+    //           let city = item.cidades
+    //           console.log (city)
+    //         for(let j of item.cidades) { 
+    //         console.log(j)
+    //           }
+    //       }
+    // }
+    
+    // buscarSigla("TO")

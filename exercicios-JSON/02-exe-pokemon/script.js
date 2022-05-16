@@ -36,19 +36,39 @@ const data = [
 
 // COMEÇA O EXERCÍCIO
 
+for (let i=0; i < data.length; i++){
+    console.log("Nome:",data[i].name)
+    console.log("Descrição:",data[i].description)
+    let tipos = data[i].types
+
+    for (let j=0; j < tipos.length; j++){
+        console.log("Tipo:",tipos[j])
+    }
+        console.log("--------------")
+}
+
+// for (let item of data){
+//    console.log("Nome:",item.name)
+//    console.log("Descrição:",item.description)
+//    for(let tipo of item.types){
+//    console.log("Tipo:",tipo)
+//    }
+//    console.log("--------------")
+  
+//   }
 // 14h13
 
 
-for(let i=0; i < data.length; i++){
-    let pokemon = data[i]
-    console.log(pokemon.name)
-    console.log(pokemon.description)
-    // console.log(pokemon.types)
+// for(let i=0; i < data.length; i++){
+//     let pokemon = data[i]
+//     console.log(pokemon.name)
+//     console.log(pokemon.description)
+//     // console.log(pokemon.types)
 
-    let tipos = pokemon.types
+//     let tipos = pokemon.types
 
-    for(let j=0; j< tipos.length; j++){
-        console.log(tipos[j])
-    }
-}
+//     for(let j=0; j< tipos.length; j++){
+//         console.log(tipos[j])
+//     }
+// }
 

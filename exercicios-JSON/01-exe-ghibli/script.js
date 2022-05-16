@@ -27,14 +27,14 @@ const jsonDeFilmes = [
 // correção 13h59
 // COMEÇA O EXERCÍCIO
 
+for (let i=0; i<jsonDeFilmes.length; i++){
+  console.log("Título:",jsonDeFilmes[i].title)
+  console.log("Descrição:",jsonDeFilmes[i].description)
+}
 for(let i=0; i < jsonDeFilmes.length; i++){
     let filme = jsonDeFilmes[i]
     console.log(filme.title)
     console.log(filme.description)
 }
-
-
-
-  
 
   
