@@ -75,3 +75,16 @@ const obj = [
         "Awards":"Nominated for 3 Oscars. Another 40 wins & 66 nominations."
     }
 ]
+
+for(i=0; i<obj.length; i++) {
+    console.log(`Titulo: ${obj[i].Title}`)
+    console.log(`Ano: ${obj[i].Year}`) 
+
+    let genero = obj[i].Genre.split(",") //coloca os itens da array em linhas diferentes
+    // console.log(genero)
+
+    for(k=0; k<genero.length; k++) {
+        console.log(`Genero: ${genero[k]}`)
+        
+    }
+}

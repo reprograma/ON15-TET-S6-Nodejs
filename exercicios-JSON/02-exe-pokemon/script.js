@@ -36,18 +36,16 @@ const data = [
 
 // COMEÇA O EXERCÍCIO
 
-// 14h13
 
 
-for(let i=0; i < data.length; i++){
-    let pokemon = data[i]
-    console.log(pokemon.name)
-    console.log(pokemon.description)
-    // console.log(pokemon.types)
+for (i=0; i < data.length; i++) {
+    // console.log(data[i].name)
+    // console.log(data[i].description)
+    // console.log(data[i].types)
 
-    let tipos = pokemon.types
+    let tipos = data[i].types
 
-    for(let j=0; j< tipos.length; j++){
+    for (j=0; j<tipos.length; j++){
         console.log(tipos[j])
     }
 }

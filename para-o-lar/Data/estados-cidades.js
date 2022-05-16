@@ -5732,3 +5732,17 @@ const estados = [
         ]
       }
     ]
+
+function listar(abrv) {
+  for(i=0; i<estados.length; i++) {
+    let sigla = estados[i].sigla
+    let cidade = estados[i].cidades
+    if(sigla == abrv){
+      return cidade
+    }
+
+  }
+}
+console.log(listar("AL"))
+ 
+    
