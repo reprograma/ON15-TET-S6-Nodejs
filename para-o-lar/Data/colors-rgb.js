@@ -149,3 +149,15 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+  for(i=0; i<obj.length; i++) {
+
+    let colors = Object.entries(obj[i]) 
+
+ for(let j=0; j <colors.length; j++){
+    let valor = colors[j][0]
+    let chave = colors[j][1].toString()
+    console.log(`${valor} RGB: ${chave}`) }
+ }
+
+ // Prof depois de dias lendo, pesquisando,testando,surtando hahaha consegui fazer o exercicio. 
