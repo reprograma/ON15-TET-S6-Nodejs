@@ -5732,3 +5732,24 @@ const estados = [
         ]
       }
     ]
+
+
+
+
+
+    function estadoCidade(sigla){
+      sigla = sigla.toUpperCase()
+      for(let i=0; i < estados.length; i++){
+        let estado = estados[i]
+        if(estado.sigla == sigla){
+          console.log(estado.cidades)
+        }
+      }
+    }
+    
+  
+    estadoCidade("BA")
+    estadoCidade("RJ")
+
+
+  
